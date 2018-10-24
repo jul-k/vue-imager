@@ -1,6 +1,8 @@
 <template>
-    <div>
-        Imager
+    <div class="ui secondary pointing menu">
+        <a href="/" class="active item">
+            Imager
+        </a>
     </div>
 </template>
 
