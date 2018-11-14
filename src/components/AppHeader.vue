@@ -4,9 +4,10 @@
             Imager
         </a>
         <div class="right menu">
-            <div v-if="isLoggedIn">
-                Buttons
-                Buttons
+            <div v-if="isLoggedIn" class="horizontal">
+                <a href="" class="item">Photo Gallery</a>
+                <a href="" class="item">Upload</a>
+                <a href="" class="item">Logout</a>
             </div>
             <a v-else href="#" class="ui item" @click="login">
                 Login
@@ -24,3 +25,10 @@ export default {
     methods: mapActions(["login"])
 }
 </script>
+
+<style scoped>
+    .horizontal {
+        display: flex;
+        flex-direction: row;
+    }
+</style>
