@@ -3,9 +3,12 @@
         <a href="/" class="active item">
             Imager
         </a>
-        {{ isLoggedIn }}
         <div class="right menu">
-            <a href="#" class="ui item" @click="login">
+            <div v-if="isLoggedIn">
+                Buttons
+                Buttons
+            </div>
+            <a v-else href="#" class="ui item" @click="login">
                 Login
             </a>
         </div>
