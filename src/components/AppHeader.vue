@@ -7,7 +7,7 @@
             <div v-if="isLoggedIn" class="horizontal">
                 <a href="" class="item">Photo Gallery</a>
                 <a href="" class="item">Upload</a>
-                <a href="" class="item">Logout</a>
+                <a href="" class="item" @click="logout">Logout</a>
             </div>
             <a v-else href="#" class="ui item" @click="login">
                 Login
@@ -22,7 +22,7 @@ import { mapActions, mapGetters } from "vuex";
 export default {
     name: "AppHeader",
     computed: mapGetters(["isLoggedIn"]),
-    methods: mapActions(["login"])
+    methods: mapActions(["login", "logout"])
 }
 </script>
 
