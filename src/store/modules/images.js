@@ -21,3 +21,10 @@ const actions = {
         console.log(response);
     }
 };
+
+export default {
+    state,
+    getters,
+    mutations,
+    actions
+};
